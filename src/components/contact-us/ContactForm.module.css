@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: var(--color-secondary);
+  }
+  
+  .formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+  }
+  
+  .formcontainer h2 {
+    font-size: 36px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  
+  .formcontainer p {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .form label {
+    display: block;
+    margin: 0.7rem 0rem 0.3rem;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline: none;
+  }
+  
+  .action {
+    margin-top: 0.3rem;
+    text-align: center;
+  }
+  
+  .form button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    padding: 13px 23px;
+    border-radius: 10px;
+    color: var(--color-white);
+  }
+  
+  .form button:hover {
+    padding: 15px 25px;
+    font-size: 15px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .alert {
+    position: relative;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 13px 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .formcontainer {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .formcontainer {
+      width: 50%;
+    }
+  
+    .formcontainer h2 {
+      font-size: 29px;
+    }
+  
+    .formcontainer p {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .formcontainer {
+      width: 60%;
+    }
+  
+    .formcontainer h2 {
+      font-size: 24px;
+    }
+  
+    .formcontainer p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .formcontainer {
+      width: 70%;
+    }
+  
+    .formcontainer h2 {
+      font-size: 20px;
+    }
+  
+    .formcontainer p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .formcontainer {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .container {
+      overflow-x: auto;
+    }
+  }
+  

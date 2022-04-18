@@ -1,0 +1,182 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3rem 8rem;
+    background-color: var(--color-secondary);
+  }
+  
+  .formcontainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .formcontainer h2 {
+    font-size: 36px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  
+  .formcontainer p {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .form label {
+    display: block;
+    margin: 0.7rem 0rem 0.3rem;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline: none;
+  }
+  
+  .action {
+    margin-top: 0.3rem;
+    text-align: center;
+  }
+  
+  .form button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    padding: 13px 23px;
+    border-radius: 10px;
+    color: var(--color-white);
+  }
+  
+  .form button:hover {
+    padding: 15px 25px;
+    font-size: 15px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .alert {
+    position: relative;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 13px 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    cursor: pointer;
+  }
+  
+  .textcontainer {
+    flex: 1.5;
+    margin-left: 1rem;
+  }
+  
+  .textcontainer h2 {
+    font-size: 36px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  
+  .textcontainer p {
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .container {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .formcontainer h2 {
+      font-size: 29px;
+    }
+  
+    .formcontainer p {
+      font-size: 18px;
+    }
+  
+    .textcontainer h2 {
+      font-size: 29px;
+    }
+  }
+  
+  @media screen and (max-width: 930px) {
+    .container {
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .textcontainer {
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .formcontainer h2 {
+      font-size: 24px;
+    }
+  
+    .formcontainer p {
+      font-size: 16px;
+    }
+  
+    .textcontainer h2 {
+      font-size: 24px;
+    }
+  
+    .textcontainer p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .formcontainer h2 {
+      font-size: 20px;
+    }
+  
+    .formcontainer p {
+      font-size: 14px;
+    }
+  
+    .textcontainer h2 {
+      font-size: 20px;
+    }
+  
+    .textcontainer p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .container {
+      overflow-x: auto;
+    }
+  }
+  

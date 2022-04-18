@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  
+  .mapcontainer {
+    position: relative;
+    border: var(--color-background) 1px solid;
+  }
+  
+  .largermap {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    display: block;
+    background-color: var(--color-white);
+    padding: 8px 12px;
+    color: #4693e8;
+  }
+  
+  .largermap:hover {
+    text-decoration: underline;
+  }
+  

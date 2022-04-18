@@ -1,0 +1,57 @@
+.container {
+    padding: 1rem 6rem;
+    background-color: var(--color-white);
+  }
+  
+  .container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .container ul li {
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+  }
+  
+  .container ul li:before {
+    content: "\003F";
+    font-family: FontAwesome;
+    margin-left: -1.3em;
+    margin-right: 8px;
+    width: 1.3em;
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+  .question {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  .answer {
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin: 0px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .container {
+      padding: 1rem 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 1rem 1.5rem;
+    }
+  
+    .question {
+      font-size: 18px;
+    }
+  
+    .answer {
+      font-size: 14px;
+    }
+  }
+  

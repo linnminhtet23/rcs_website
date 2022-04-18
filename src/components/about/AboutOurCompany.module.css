@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 7rem 5rem;
+  }
+  
+  .container h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .textcontainer {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 1.7rem;
+    line-height: 1.8rem;
+    width: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .textcontainer {
+      width: 55%;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .textcontainer {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .textcontainer {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .textcontainer {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container h1 {
+      font-size: 29px;
+    }
+  
+    .textcontainer {
+      width: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .textcontainer {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .textcontainer {
+      width: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .textcontainer {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .container {
+      padding: 1rem 3rem 5rem;
+    }
+  
+    .container h1 {
+      font-size: 24px;
+    }
+  
+    .textcontainer {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container {
+      padding: 1rem 0.8rem 5rem;
+    }
+  }
+  

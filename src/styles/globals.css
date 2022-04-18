@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+  --color-primary: #533125;
+  --color-secondary: #faf4f0;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-background: #f1e0cf;
+
+  --size-1: 1.2rem;
+
+  padding: 0;
+  margin: 0;
+  font-family: "Lora", serif;
+  background-color: var(--color-background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.paragraphfont {
+  font-family: "Poppins", sans-serif;
+}
+
+.erroralert {
+  width: 100%;
+  margin: 80px auto 0px;
+  height: 330px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.erroralert h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .erroralert h1 {
+    font-size: 18px;
+  }
+}
+
+/* Carousel(React Responsive Carousel) custom arrow button */
+/* disable Carousel original black background color*/
+/* .carousel .slide {
+  background-color: #f8f9fa !important;
+} */
+
+/* style for prev/next button */
+.carousel-slider .arrow-left {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  padding: 0;
+  left: 10px !important;
+  background: #c7c7c8;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  line-height: 0;
+  text-align: center;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.carousel-slider .arrow-left > span {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.carousel-slider .arrow-left:hover {
+  background: var(--color-primary);
+}
+
+.carousel-slider .arrow-right {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  padding: 0;
+  right: 10px !important;
+  background: #c7c7c8;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  line-height: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.carousel-slider .arrow-right > span {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.carousel-slider .arrow-right:hover {
+  background: var(--color-primary);
+}
+
+/* hide prev/next button in mobile client */
+@media screen and (max-width: 991.98px) {
+  .carousel-slider .arrow-left {
+    display: none;
+  }
+
+  .carousel-slider .arrow-right {
+    display: none;
+  }
+}
+
+/* Scroll Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 0px;
+  color: #fff;
+  padding: 0;
+  right: 10px !important;
+  background: #c7c7c8;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  line-height: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.scroll-top > span {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.scroll-top:hover {
+  background: var(--color-primary);
+}

@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 7rem 0rem;
+  }
+  
+  .container h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 1.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 70%;
+  }
+  
+  .image {
+    flex: 1.5;
+    border-radius: 180px;
+  }
+  
+  .textcontainer {
+    flex: 2;
+    line-height: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .container {
+      padding: 2.5rem 5rem 0rem;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .card {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+      padding: 2.5rem 4rem 0rem;
+    }
+  
+    .container h1 {
+      font-size: 29px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .container {
+      padding: 2.5rem 3rem 0rem;
+    }
+  
+    .container h1 {
+      font-size: 24px;
+    }
+  
+    .card {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  

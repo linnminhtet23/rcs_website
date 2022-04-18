@@ -1,0 +1,59 @@
+.card {
+    background-color: var(--color-white);
+    margin: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+  
+  .textcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 18px;
+  }
+  
+  .textcontainer .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .textcontainer .date {
+    opacity: 0.7;
+  }
+  
+  .card p {
+    line-height: 2rem;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+  
+  .readmore {
+    color: #4693e8;
+    text-align: right;
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .readmore:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .card {
+      margin: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+      margin: 20px 0px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  }
+  
