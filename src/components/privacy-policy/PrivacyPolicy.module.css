@@ -1,0 +1,41 @@
+.container{
+    padding: 1rem 6rem;
+    background-color: var(--color-white);
+}
+
+.container h1 {
+    font-size: 28px;
+}
+
+.container h3 {
+    font-size: 23px;
+}
+
+.container p{
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 1rem 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h3 {
+        font-size: 18px;
+    }
+
+    .container p{
+        font-size: 14px;
+    }
+}

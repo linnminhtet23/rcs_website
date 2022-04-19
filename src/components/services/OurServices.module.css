@@ -1,0 +1,157 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem auto 5rem;
+  }
+  
+  .container h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container h1 {
+      font-size: 29px;
+    }
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    margin: 20px;
+    width: 370px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .card .imagecontainer {
+    border-radius: 180px;
+    width: 370px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .image {
+    border-radius: 10px;
+  }
+  
+  .card h4 {
+    margin: 8px auto;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .card p {
+    margin: 10px 10px 5px;
+    font-size: 17px;
+  }
+  
+  .card ul {
+    padding-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .card ul li {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  
+  .btn {
+    display: block;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: var(--size-1);
+    color: var(--color-white);
+    cursor: pointer;
+    background-color: var(--color-primary);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .card {
+      margin: 10px;
+    }
+  
+    .card h4 {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 876px) {
+    .card {
+      width: 280px;
+      height: 600px;
+    }
+  
+    .card .imagecontainer {
+      width: 280px;
+      height: 150px;
+    }
+  
+    .card h4 {
+      font-size: 20px;
+    }
+  
+    .card ul li {
+      font-size: 16px;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 280px;
+      height: 600px;
+    }
+  
+    .card .imagecontainer {
+      width: 280px;
+      height: 150px;
+    }
+  
+    .card h4 {
+      font-size: 18px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  
+    .card ul li {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  

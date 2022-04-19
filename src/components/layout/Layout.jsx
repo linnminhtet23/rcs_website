@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import styles from "./Layout.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import Visitors from "../../share-components/Visitors";
+import Visitors from "../../shared-components/Visitors";
 
 const VISITORS_KEY = "rcs-website-visitors";
 

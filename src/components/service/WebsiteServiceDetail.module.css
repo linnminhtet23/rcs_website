@@ -1,0 +1,186 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 3rem 5rem;
+  }
+  
+  .container h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .detailcard {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 950px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .tablecontainer {
+    overflow-x: auto;
+  }
+  
+  .styledtable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .styledtable thead tr {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: left;
+  }
+  
+  .styledtable th {
+    padding: 12px 15px;
+    border: 1px solid var(--color-secondary);
+  }
+  .styledtable td {
+    padding: 12px 15px;
+    border: 1px solid var(--color-primary);
+  }
+  
+  .styledtable tbody tr {
+    border-bottom: 1px solid var(--color-background);
+  }
+  
+  .styledtable tbody tr:nth-of-type(even) {
+    background-color: var(--color-secondary);
+  }
+  
+  .styledtable tbody tr:last-of-type {
+    border-bottom: 2px solid var(--color-primary);
+  }
+  
+  .packagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .packageimage {
+    flex: 1;
+    border-radius: 10px;
+  }
+  
+  .packagetextcontainer {
+    flex: 3;
+    margin-left: 8px;
+  }
+  
+  .packagetextcontainer h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+  }
+  
+  .packagetextcontainer p {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container h1 {
+      font-size: 29px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .detailcard {
+      width: 800px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .detailcard {
+      width: 700px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .detailcard {
+      width: 650px;
+    }
+  
+    .tablecontainer {
+      width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
+    .detailcard {
+      width: 550px;
+    }
+  
+    .tablecontainer {
+      width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container h1 {
+      font-size: 18px;
+    }
+  
+    .detailcard {
+      width: 500px;
+    }
+  
+    .tablecontainer {
+      width: 450px;
+    }
+  
+    .styledtable {
+      font-size: 14px;
+    }
+  
+    .packagetextcontainer h3 {
+      font-size: 16px;
+    }
+  
+    .packagetextcontainer p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .detailcard {
+      width: 400px;
+    }
+  
+    .tablecontainer {
+      width: 350px;
+    }
+  
+    .packagecontainer {
+      flex-direction: column;
+    }
+  
+    .packagetextcontainer {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .detailcard {
+      width: 300px;
+    }
+  
+    .tablecontainer {
+      width: 270px;
+    }
+  }
+  
