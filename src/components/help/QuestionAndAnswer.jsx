@@ -1,8 +1,8 @@
 // import { useRouter } from "next/router";
-import styles from "./QuestionsAndAnswers.module.css";
+import styles from "./QuestionsAndAnswer.module.css";
 
 function QuestionsAndAnswers() {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <div className={[styles.container, "paragraphfont"].join(" ")}>

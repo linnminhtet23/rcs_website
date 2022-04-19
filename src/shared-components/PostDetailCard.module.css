@@ -1,0 +1,96 @@
+.container {
+    background-color: var(--color-white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .detailcard {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    margin: 3rem auto;
+  }
+  
+  .imagecontainer {
+    flex: 1;
+  }
+  
+  .detailcard .textcontainer {
+    flex: 1.7;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detailcard .textcontainer p {
+    font-size: 15px;
+    line-height: 2rem;
+    margin: 8px 15px;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .detailcard {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .detailcard {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .detailcard {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .detailcard {
+      width: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .detailcard {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .detailcard {
+      width: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .detailcard {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .detailcard {
+      flex-direction: column;
+    }
+  
+    .detailcard {
+      width: 70%;
+    }
+  
+    .detailcard .textcontainer p {
+      margin: 8px 0px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .detailcard {
+      width: 90%;
+    }
+    .detailcard p {
+      font-size: 14px;
+    }
+  }
+  

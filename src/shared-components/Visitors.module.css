@@ -1,0 +1,20 @@
+.container {
+    position: fixed;
+    top: 80%;
+    left: -87px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.8rem;
+    font-size: 19px;
+    cursor: pointer;
+  }
+  
+  .container .visitors {
+    margin-right: 8px;
+  }
+  
+  .container:hover {
+    left: 0px;
+    transition: all 0.5s ease-out;
+  }
+  
