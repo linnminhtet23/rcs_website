@@ -1,0 +1,15 @@
+{
+    "locales": ["en-US", "mm"],
+    "defaultLocale": "en-US",
+    "pages": {
+      "/": ["home"],
+      "/about": ["about"],
+      "/products/[id]": ["productDetail"],
+      "/services": ["services"],
+      "/services/website": ["webServiceDetail"],
+      "/services/web-application": ["webAppServiceDetail"],
+      "/services/android-application": ["androidAppServiceDetail"],
+      "/checkout/[order]": ["checkout"]
+    }
+  }
+  
