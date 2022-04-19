@@ -17,6 +17,10 @@ function CheckServices() {
             height={496}
           />
         </div>
+        <h2>
+          We believe in collaboration.
+          <br /> 
+        </h2>
 {/* 
         <h2>
           {t("home:service_title_1")}
