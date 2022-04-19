@@ -1,5 +1,6 @@
 import Button from "./Button";
 import styles from "./CheckPricing.module.css";
+import data from "../../locales/en-US/home.json";
 // import useTranslation from "next-translate/useTranslation";
 
 function CheckPricing() {
@@ -10,9 +11,7 @@ function CheckPricing() {
       <div className={styles.textcontainer}>
         <div className={styles.paragraph}>
           <p className="paragraphfont">
-            We try to offer our products and services with a reasonable price.
-            If the work is small or manageable, we reduce the price. If we can’t
-            reduce the price, we improve the quality of the product.
+            {data.check_pricing}
           </p>
           {/* <p className="paragraphfont">{t("home:check_pricing")}</p> */}
         </div>

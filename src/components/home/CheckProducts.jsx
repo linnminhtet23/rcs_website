@@ -1,5 +1,6 @@
 import Button from "./Button";
 import styles from "./CheckProducts.module.css";
+import data from "../../locales/en-US/home.json";
 // import useTranslation from "next-translate/useTranslation";
 
 function CheckProduct() {
@@ -17,22 +18,13 @@ function CheckProduct() {
       </div>
 
       <h2>
-        We offer two types of solutions for you or your company.
+        {data.product_title_1}
         <br />
-        Products and Services
+        {data.product_title_2}
         <br />
-        Ready-made products and services are available to solve business
-        problems
-        {/* {t("home:product_title_1")}
-        <br /> {t("home:product_title_2")}
-        <br /> {t("home:product_title_3")} */}
+        {data.product_title_3}
       </h2>
-      <p className="paragraphfont">
-        All of our products were developed by circling through the requirement
-        analysing, building based upon the real world datas, testing under
-        various test methods and situations, and finally when the products meet
-        their best potential, we deliver them to the public.
-      </p>
+      <p className="paragraphfont">{data.product_subtitle}</p>
       {/* <p className="paragraphfont">{t("home:product_subtitle")}</p> */}
       <Button path="/products" label="Check Products" />
     </div>

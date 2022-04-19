@@ -1,10 +1,11 @@
 // import Image from "next/image";
 import Button from "./Button";
 import styles from "./CheckServices.module.css";
+import data from "../../locales/en-US/home.json";
 // import useTranslation from "next-translate/useTranslation";
 
 function CheckServices() {
-//   const { t } = useTranslation();
+  //   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
@@ -18,16 +19,13 @@ function CheckServices() {
           />
         </div>
         <h2>
-          We believe in collaboration.
-          <br /> 
+          {data.service_title_1}
+          <br />
+          {data.service_title_2}
+          <br />
         </h2>
-{/* 
-        <h2>
-          {t("home:service_title_1")}
-          <br /> {t("home:service_title_2")}
-        </h2> */}
 
-        {/* <p className="paragraphfont">{t("home:service_subtitle")}</p> */}
+        <p className="paragraphfont">{data.service_subtitle}</p>
         <Button path="/services" label="Check Services" />
       </div>
     </div>

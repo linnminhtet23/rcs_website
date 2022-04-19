@@ -119,37 +119,7 @@ function Footer() {
             {/* </Link> */}
           </p>
         </div>
-        <div className={styles.dropdown} onClick={handleIsActive}>
-          <div className={styles.dropdownbtn}>
-            {selected}
-            <span>
-              <FontAwesomeIcon icon={faCaretDown} />
-            </span>
-          </div>
-          {isActive && (
-            <div className={styles.dropdowncontent}>
-              {options.map((option, index) => (
-                // <Link
-                //   key={index}
-                //   href={router.asPath}
-                //   locale={router.locales[index]}
-                // >
-                  <a>
-                    <div
-                      className={styles.dropdownitem}
-                      onClick={() => {
-                        setSelected(option);
-                        setIsActive(false);
-                      }}
-                    >
-                      {option}
-                    </div>
-                  </a>
-                // </Link>
-              ))}
-            </div>
-          )}
-        </div>
+        
       </div>
       <p className={styles.copyright}>
         &copy; 2021 Real Code Solution. All rights reserved.
