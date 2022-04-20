@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function ServiceHeroShared({ featuredServices }) {
   return (
@@ -49,9 +50,9 @@ function ServiceHeroShared({ featuredServices }) {
               <p className="paragraphfont">
                 {featuredService.featuredDescription}
               </p>
-              {/* <Link href={`/services/${featuredService.id}`}> */}
+              <Link to={`/services/${featuredService.id}`}>
                 <a className={styles.btn}>Read More</a>
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         ))}
