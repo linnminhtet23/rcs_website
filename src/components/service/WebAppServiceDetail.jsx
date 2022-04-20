@@ -1,9 +1,9 @@
 import styles from "./WebAppServiceDetail.module.css";
-// import useTranslation from "next-translate/useTranslation";
 import CheckoutBtn from "../../shared-components/CheckoutBtn";
+import data from '../../locales/en-US/webAppServiceDetail.json'
+
 
 function WebAppServiceDetail() {
-//   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
@@ -11,16 +11,16 @@ function WebAppServiceDetail() {
       <div className={styles.detailcard}>
         <div className={styles.textcontainer}>
           <p>
-            {/* <b>{t("webAppServiceDetail:web-app-hightlight-1")}</b>{" "}
-            {t("webAppServiceDetail:web-app-description-1")} */}
+            <b>{data["web-app-hightlight-1"]}</b>
+            {data["web-app-description-1"]}
           </p>
           <p>
-            {/* <b>{t("webAppServiceDetail:web-app-hightlight-2")}</b>{" "}
-            {t("webAppServiceDetail:web-app-description-1")} */}
+            <b>{data["web-app-hightlight-2"]}</b>
+            {data["web-app-description-2"]}
           </p>
           <p>
-            {/* <b>{t("webAppServiceDetail:web-app-hightlight-3")}</b>{" "}
-            {t("webAppServiceDetail:web-app-description-1")} */}
+            <b>{data["web-app-hightlight-3"]}</b>
+            {data["web-app-description-3"]}
           </p>
 
           <CheckoutBtn path="Web App Service" />

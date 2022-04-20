@@ -10,6 +10,8 @@ import NewsPage from "./pages/news";
 import ProductsPage from "./pages/porducts";
 import PricingPage from "./pages/pricing";
 import ServicesPage from "./pages/services";
+import AndroidAppServicePage from "./pages/services/android-application";
+import WebAppServicePage from "./pages/services/web-application";
 import WebsiteServicePage from "./pages/services/website";
 
 import "./styles/globals.css";
@@ -23,6 +25,9 @@ function App() {
         <Route path="/products" element={<ProductsPage/>}/>
         <Route path="/services" element={<ServicesPage/>}/>
         <Route path="/services/website" element={<WebsiteServicePage/>}/>
+        <Route path="/services/web-application" element={<WebAppServicePage/>}/>
+        <Route path="/services/android-application" element={<AndroidAppServicePage/>}/>
+
         <Route path="/pricings" element={<PricingPage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/contact-us" element={<ContactUsPage/>}/>

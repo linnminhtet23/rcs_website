@@ -8,11 +8,10 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 // import useTranslation from "next-translate/useTranslation";
 import { ReCAPTCHA_KEY } from "../../util";
 import { useNavigate, useParams } from "react-router-dom";
+import data from '../../locales/en-US/checkout.json'
 
 function CheckoutForm() {
-  // const { t } = useTranslation();
 
-  const router = useNavigate();
   const params = useParams();
   const formRef = useRef();
   const recaptchaRef = useRef(null);
@@ -117,8 +116,8 @@ function CheckoutForm() {
       </div>
 
       <div className={styles.textcontainer}>
-        {/* <h2>{t("checkout:checkout_title")}</h2> */}
-        {/* <p className="paragraphfont">{t("checkout:checkout_description")}</p> */}
+        <h2>{data["checkout_title"]}</h2>
+        <p className="paragraphfont">{data["checkout_description"]}</p>
       </div>
     </div>
   );

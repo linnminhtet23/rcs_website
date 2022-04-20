@@ -1,9 +1,9 @@
 import styles from "./AndroidAppServiceDetail.module.css";
-// import useTranslation from "next-translate/useTranslation";
 import CheckoutBtn from "../../shared-components/CheckoutBtn";
+import data from '../../locales/en-US/androidAppServiceDetail.json'
+
 
 function AndroidAppServiceDetail() {
-//   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
@@ -11,11 +11,11 @@ function AndroidAppServiceDetail() {
       <div className={styles.detailcard}>
         <div className={styles.textcontainer}>
           <p>
-            {/* <b>{t("androidAppServiceDetail:android-app-hightlight-1")}</b>{" "}
-            {t("androidAppServiceDetail:android-app-description-1")} */}
+            <b>{data["android-app-hightlight-1"]}</b>
+            {data["android-app-description-1"]}
           </p>
-          {/* <p>{t("androidAppServiceDetail:android-app-description-2")}</p>
-          <p>{t("androidAppServiceDetail:android-app-description-3")}</p> */}
+          <p>{data["android-app-description-2"]}</p>
+          <p>{data["android-app-description-3"]}</p>
 
           <CheckoutBtn path="Android App Service" />
         </div>
