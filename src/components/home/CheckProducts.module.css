@@ -11,6 +11,11 @@
   .container .image {
     margin: 2.47em auto 1.47em;
   }
+
+  .productimage{
+    width: 766px;
+    height: 496px;
+  }
   
   .container h2 {
     font-size: 48px;
@@ -25,7 +30,12 @@
     .container {
       width: 100%;
     }
-  
+    
+    .productimage{
+      width: 90%;
+      margin: auto;
+    }
+    
     .container h2 {
       font-size: 36px;
     }
@@ -38,6 +48,13 @@
   @media screen and (max-width: 600px) {
     .container {
       padding: 5rem 3rem;
+      width: 100%;
+    }
+
+    .productimage{
+      width: 300px;
+      height: 250px;
+      margin: auto;
     }
   
     .container h2 {

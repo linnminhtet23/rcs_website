@@ -6,6 +6,7 @@ import {
   faTimes,
   faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function NavigationMenu() {
   const [click, setClick] = useState(false);
@@ -29,16 +30,9 @@ function NavigationMenu() {
 
   return (
     <nav className={styles.navbar}>
-      {/* <Link href="/"> */}
-        <a className={styles.navbarlogo}>
-          <img
-            src="/images/home/logo.png"
-            alt="RCS"
-            width={130}
-            height={130}
-          />
-        </a>
-      {/* </Link> */}
+      <Link to="/" className={styles.navbarlogo}>
+        <img src="/images/home/logo.png" alt="RCS" width={130} height={130} />
+      </Link>
       <div className={styles.menuicon} onClick={handleClick}>
         <FontAwesomeIcon icon={click ? faTimes : faBars} />
       </div>
@@ -48,25 +42,31 @@ function NavigationMenu() {
         }
       >
         <li className={styles.navitem}>
-          {/* <Link href="/products"> */}
-            <a className={styles.navlinks} onClick={closeMobileMenu}>
-              Products
-            </a>
-          {/* </Link> */}
+          <Link
+            to="/products"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            Products
+          </Link>
         </li>
         <li className={styles.navitem}>
-          {/* <Link href="/services"> */}
-            <a className={styles.navlinks} onClick={closeMobileMenu}>
-              Services
-            </a>
-          {/* </Link> */}
+          <Link
+            to="/services"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            Services
+          </Link>
         </li>
         <li className={styles.navitem}>
-          {/* <Link href="/pricing"> */}
-            <a className={styles.navlinks} onClick={closeMobileMenu}>
-              Pricing
-            </a>
-          {/* </Link> */}
+          <Link
+            to="/pricings"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            Pricing
+          </Link>
         </li>
         <li
           className={styles.navitem}
@@ -88,35 +88,37 @@ function NavigationMenu() {
               }
             >
               <li>
-                {/* <Link href="/news"> */}
-                  <a className={styles.dropdownlink} onClick={closeMobileMenu}>
-                    News
-                  </a>
-                {/* </Link> */}
+                <Link to="/news">
+                <a className={styles.dropdownlink} onClick={closeMobileMenu}>
+                  News
+                </a>
+                </Link>
               </li>
               <li>
-                {/* <Link href="/blogs"> */}
-                  <a className={styles.dropdownlink} onClick={closeMobileMenu}>
-                    Blogs
-                  </a>
-                {/* </Link> */}
+                <Link to="/blogs">
+                <a className={styles.dropdownlink} onClick={closeMobileMenu}>
+                  Blogs
+                </a>
+                </Link>
               </li>
             </ul>
           )}
         </li>
         <li className={styles.navitem}>
-          {/* <Link href="/about"> */}
-            <a className={styles.navlinks} onClick={closeMobileMenu}>
-              About
-            </a>
-          {/* </Link> */}
+          <Link
+            to="/about"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            About
+          </Link>
         </li>
         <li className={[styles.navitem, styles.mobilebtn].join(" ")}>
-          {/* <Link href="/contact-us" passHref={true}> */}
-            <button className={styles.btn} onClick={closeMobileMenu}>
-              Contact Us
-            </button>
-          {/* </Link> */}
+          <Link to="/contact-us" passHref={true}>
+          <button className={styles.btn} onClick={closeMobileMenu}>
+            Contact Us
+          </button>
+          </Link>
         </li>
       </ul>
     </nav>

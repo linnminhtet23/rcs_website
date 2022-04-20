@@ -132,8 +132,9 @@ const products = [
   },
 ];
 
-export function getProducts() {
-  return products; 
+
+export function getProducts(){
+  return products;
 }
 
 export function getProductsByPrice(less, lot) {

@@ -1,9 +1,9 @@
 import styles from "./OurServices.module.css";
+import data from "../../locales/en-US/services.json";
+import { Link } from "react-router-dom";
 
-// import useTranslation from "next-translate/useTranslation";
 
 function OurServices() {
-//   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
@@ -15,22 +15,21 @@ function OurServices() {
             <img
               src="/images/services/website/website-service.jpg"
               alt="Website Service"
-            //   layout="fill"
-            //   objectFit="cover"
+            
               className={styles.image}
             />
           </div>
-          {/* <h4>{t("services:website")}</h4> */}
-          {/* <p>{t("services:website-description")}</p> */}
-          {/* <ul>
-            <li>{t("services:website-description-list-1")}</li>
-            <li>{t("services:website-description-list-2")}</li>
-            <li>{t("services:website-description-list-3")}</li>
-            <li>{t("services:website-description-list-4")}</li>
-          </ul> */}
-          {/* <Link href="/services/website"> */}
+          <h4>{data.website}</h4>
+          <p>{data["website-description"]}</p>
+          <ul>
+            <li>{data["website-description-list-1"]}</li>
+            <li>{data["website-description-list-2"]}</li>
+            <li>{data["website-description-list-3"]}</li>
+            <li>{data["website-description-list-4"]}</li>
+          </ul>
+          <Link to="/services/website">
             <a className={styles.btn}>Read More</a>
-          {/* </Link> */}
+          </Link>
         </div>
 
         {/* Web App */}
@@ -39,21 +38,19 @@ function OurServices() {
             <img
               src="/images/services/web-application/web-application-1.jpg"
               alt="Website Application"
-            //   layout="fill"
-            //   objectFit="cover"
               className={styles.image}
             />
           </div>
-          {/* <h4>{t("services:webapp")}</h4>
-          <p>{t("services:webapp-description")}</p>
+          <h4>{data.webapp}</h4>
+          <p>{data["webapp-description"]}</p>
           <ul>
-            <li>{t("services:webapp-description-list-1")}</li>
-            <li>{t("services:webapp-description-list-2")}</li>
-            <li>{t("services:webapp-description-list-3")}</li>
-          </ul> */}
-          {/* <Link href="/services/web-application"> */}
+            <li>{data["webapp-description-list-1"]}</li>
+            <li>{data["webapp-description-list-2"]}</li>
+            <li>{data["webapp-description-list-3"]}</li>
+          </ul> 
+          <Link to="/services/web-application">
             <a className={styles.btn}>Read More</a>
-          {/* </Link> */}
+          </Link>
         </div>
 
         {/* Android Application */}
@@ -62,20 +59,19 @@ function OurServices() {
             <img
               src="/images/services/android-application/android-application.jpg"
               alt="Website Application"
-            //   layout="fill"
-            //   objectFit="cover"
+
               className={styles.image}
             />
           </div>
-          {/* <h4>{t("services:android")}</h4> */}
+          <h4>{data.android}</h4>
           <ul>
-            {/* <li>{t("services:android-description-list-1")}</li>
-            <li>{t("services:android-description-list-2")}</li>
-            <li>{t("services:android-description-list-3")}</li> */}
+            <li>{data["android-description-list-1"]}</li>
+            <li>{data["android-description-list-2"]}</li>
+            <li>{data["android-description-list-3"]}</li>
           </ul>
-          {/* <Link href="/services/android-application"> */}
+          <Link to="/services/android-application">
             <a className={styles.btn}>Read More</a>
-          {/* </Link> */}
+          </Link>
         </div>
       </div>
     </div>

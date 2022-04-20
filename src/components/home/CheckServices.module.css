@@ -4,6 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+  }
+
+  .serviceimage{
+    width: 766px;
+    height: 496px;
   }
   
   .textcontainer {
@@ -33,7 +39,11 @@
     .textcontainer {
       width: 100%;
     }
-  
+
+    .serviceimage{
+      width: 90%;
+      margin: auto;
+    }
     .textcontainer h2 {
       font-size: 36px;
     }
@@ -47,6 +57,12 @@
     .textcontainer {
       padding: 5rem 3rem;
     }
+    .serviceimage{
+      width: 300px;
+      height: 250px;
+      margin: auto;
+    }
+  
   
     .textcontainer h2 {
       font-size: 25px;

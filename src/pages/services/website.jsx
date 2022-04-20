@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState ,useEffect} from "react";
 import ServiceHero from "../../components/service/ServiceHero";
 import Information from "../../components/Information";
 import { getClientSuccess } from "../../data/clientSuccess";
@@ -7,28 +7,14 @@ import WebsiteServiceDetail from "../../components/service/WebsiteServiceDetail"
 import { featuredServicesMM } from "../../data/featuredServicesMM";
 import { featuredServices } from "../../data/featuredServices";
 
-export async function getStaticProps(context) {
-  const { locale } = context;
+export default function WebsiteServicePage() {
+  const [featuredServicesData, setFeaturedServicesData] = useState([]);
+  const [items, setItems] = useState([]);
 
-  const featuredServicesData =
-    locale === "en-US" ? featuredServices : featuredServicesMM;
+  useEffect(() => {
+    setFeaturedServicesData(featuredServices)
+  }, []);
 
-  const items =
-    locale === "en-US"
-      ? getClientSuccess()
-      : locale === "mm"
-      ? getClientSuccessMM()
-      : [];
-
-  return {
-    props: {
-      featuredServicesData,
-      items,
-    },
-  };
-}
-
-export default function WebsiteServicePage({ featuredServicesData, items }) {
   return (
     <Fragment>
       <ServiceHero featuredServices={featuredServicesData} />

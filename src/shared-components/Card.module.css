@@ -22,6 +22,8 @@
   
   .card .image {
     border-radius: 10px;
+    width: 370px;
+    height: 300px;
   }
   
   .card h4 {
@@ -78,6 +80,12 @@
     .card .imagecontainer {
       width: 280px;
       height: 150px;
+    }
+
+    .card .image{
+      width: 280px;
+      height: 150px;
+      object-fit: cover;
     }
   
     .card h4 {

@@ -5,7 +5,10 @@
     align-items: center;
     flex-direction: column;
   }
-  
+  .pricingimage{
+    width: 766px;
+    height: 496px;
+  }
   .textcontainer {
     display: flex;
     justify-content: center;
@@ -38,6 +41,10 @@
     .textcontainer {
       flex-direction: column;
     }
+    .pricingimage{
+      width: 90%;
+      margin: auto;
+    }
   
     .textcontainer .paragraph {
       margin: 5rem auto 3rem auto;
@@ -52,6 +59,11 @@
   @media screen and (max-width: 600px) {
     .textcontainer {
       padding: 3rem 3rem 1.3rem 3rem;
+    }
+    .pricingimage{
+      width: 300px;
+      height: 250px;
+      margin: auto;
     }
   
     .textcontainer .paragraph {

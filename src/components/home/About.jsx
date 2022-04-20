@@ -15,8 +15,7 @@ function About() {
           <img
             src="/images/home/about.png"
             alt="About"
-            width={766}
-            height={496}
+            className={styles.aboutimage}
           />
         </div>
 

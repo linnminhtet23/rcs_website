@@ -20,13 +20,14 @@ function CheckPricing() {
           <img
             src="/images/home/check-pricing.png"
             alt="Check Pricing"
-            width={766}
-            height={496}
+            // width={766}
+            // height={496}
+            className={styles.pricingimage}
           />
         </div>
       </div>
       <div className={styles.buttoncontainer}>
-        <Button path="/pricing" label="Check Pricing" />
+        <Button path="/pricings" label="Check Pricing" />
       </div>
     </div>
   );

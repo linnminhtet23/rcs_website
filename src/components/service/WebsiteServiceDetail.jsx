@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 // import useTranslation from "next-translate/useTranslation";
 import CheckoutBtn from "../../shared-components/CheckoutBtn";
+import data from '../../locales/en-US/webServiceDetail.json';
 
 function WebsiteServiceDetail() {
   // const { t } = useTranslation();
@@ -325,8 +326,8 @@ function WebsiteServiceDetail() {
           />
 
           <div className={styles.packagetextcontainer}>
-            {/* <h3>{t("webServiceDetail:basic-website")}</h3>
-            <p>{t("webServiceDetail:basic-website-description")}</p> */}
+            <h3>{data["basic-website"]}</h3>
+            <p>{data["basic-website-description"]}</p>
           </div>
         </div>
 
@@ -340,8 +341,8 @@ function WebsiteServiceDetail() {
           />
 
           <div className={styles.packagetextcontainer}>
-            {/* <h3>{t("webServiceDetail:standard-website")}</h3>
-            <p>{t("webServiceDetail:standard-website-description")}</p> */}
+            <h3>{data["standard-website"]}</h3>
+            <p>{data["standard-website-description"]}</p>
           </div>
         </div>
 
@@ -355,8 +356,8 @@ function WebsiteServiceDetail() {
           />
 
           <div className={styles.packagetextcontainer}>
-            {/* <h3>{t("webServiceDetail:first-class-website")}</h3>
-            <p>{t("webServiceDetail:first-class-website-description")}</p> */}
+            <h3>{data["first-class-website"]}</h3>
+            <p>{data["first-class-website-description"]}</p>
           </div>
         </div>
 
@@ -370,8 +371,8 @@ function WebsiteServiceDetail() {
           />
 
           <div className={styles.packagetextcontainer}>
-            {/* <h3>{t("webServiceDetail:e-commerce")}</h3>
-            <p>{t("webServiceDetail:e-commerce-description")}</p> */}
+            <h3>{data["e-commerce"]}</h3>
+            <p>{data["e-commerce-description"]}</p>
           </div>
         </div>
 

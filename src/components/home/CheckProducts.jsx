@@ -12,8 +12,9 @@ function CheckProduct() {
         <img
           src="/images/home/check-products.png"
           alt="Check Products"
-          width={766}
-          height={496}
+          // width={766}
+          // height={496}
+          className={styles.productimage}
         />
       </div>
 
@@ -25,7 +26,6 @@ function CheckProduct() {
         {data.product_title_3}
       </h2>
       <p className="paragraphfont">{data.product_subtitle}</p>
-      {/* <p className="paragraphfont">{t("home:product_subtitle")}</p> */}
       <Button path="/products" label="Check Products" />
     </div>
   );

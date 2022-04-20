@@ -7,11 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 // import useTranslation from "next-translate/useTranslation";
 import { ReCAPTCHA_KEY } from "../../util";
+import { useNavigate, useParams } from "react-router-dom";
 
 function CheckoutForm() {
   // const { t } = useTranslation();
 
-  // const router = useRouter();
+  const router = useNavigate();
+  const params = useParams();
   const formRef = useRef();
   const recaptchaRef = useRef(null);
   const [message, setMessage] = useState("");
@@ -69,7 +71,7 @@ function CheckoutForm() {
               type="text"
               id="order"
               name="order"
-              // defaultValue={router.query.order}
+              defaultValue={params.path}
               readOnly
               required
             />

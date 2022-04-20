@@ -14,8 +14,9 @@ function CheckServices() {
           <img
             src="/images/home/check-services.png"
             alt="Check Services"
-            width={766}
-            height={496}
+            // width={766}
+            // height={496}
+            className={styles.serviceimage}
           />
         </div>
         <h2>

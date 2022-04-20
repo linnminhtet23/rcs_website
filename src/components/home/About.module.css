@@ -6,6 +6,10 @@
     align-items: center;
     flex-direction: column;
   }
+  .aboutimage{
+    width: 766px;
+    height: 496px;
+  }
   
   .textcontainer {
     width: 80%;
@@ -40,6 +44,10 @@
     .textcontainer {
       flex-direction: column;
     }
+    .aboutimage{
+      width: 90%;
+      margin: auto;
+    }
   
     .textcontainer .paragraph {
       margin: 5rem auto 3rem auto;
@@ -50,6 +58,12 @@
     .textcontainer {
       padding: 3rem 3rem 1.3rem 3rem;
     }
+    .aboutimage{
+      width: 300px;
+      height: 250px;
+      margin: auto;
+    }
+  
   
     .textcontainer .paragraph {
       font-size: 18px;

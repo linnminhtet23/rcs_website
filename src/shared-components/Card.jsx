@@ -1,5 +1,6 @@
 // import { useEffect } from "react";
 // import Image from "next/image";
+import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 
 function Card({ image, name, descriptions, path }) {
@@ -9,6 +10,7 @@ function Card({ image, name, descriptions, path }) {
         <img
           src={image}
           alt={name}
+
         //   layout="fill"
         //   objectFit="cover"
           className={styles.image}
@@ -21,7 +23,9 @@ function Card({ image, name, descriptions, path }) {
         ))}
       </ul>
       {/* <Link href={path}> */}
+      <Link to={path}>
         <a className={styles.btn}>Read More</a>
+        </Link>
       {/* </Link> */}
     </div>
   );

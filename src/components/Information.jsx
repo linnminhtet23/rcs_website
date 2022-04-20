@@ -2,12 +2,15 @@ import React, { Fragment } from 'react'
 import SoftwaresWeDevelop from '../shared-components/SoftwaresWeDevelop'
 import TechnologiesWeUse from '../shared-components/TechnologiesWeUse'
 import ClientSuccess from '../shared-components/ClientSuccess'
-function Information() {
+import OurClients from '../shared-components/OurClients'
+function Information({items}) {
+  // console.log(items)
   return (
     <Fragment>
         <SoftwaresWeDevelop/>
-        {/* <ClientSuccess/> */}
+        {/* <ClientSuccess items={items}/> */}
         <TechnologiesWeUse/>
+        <OurClients/>
     </Fragment>
   )
 }
