@@ -74,9 +74,9 @@ function NavigationMenu() {
           onMouseLeave={onMouseLeave}
           onClick={handleDropdownLinkClick}
         >
-          <a className={styles.navlinks} onClick={handleDropdownLinkClick}>
+          <span className={styles.navlinks} onClick={handleDropdownLinkClick}>
             Posts <FontAwesomeIcon icon={faCaretDown} />
-          </a>
+          </span>
 
           {dropdown && (
             <ul
@@ -88,17 +88,15 @@ function NavigationMenu() {
               }
             >
               <li>
-                <Link to="/news">
-                <a className={styles.dropdownlink} onClick={closeMobileMenu}>
+                <Link to="/news" className={styles.dropdownlink} onClick={closeMobileMenu}>
+                
                   News
-                </a>
+                
                 </Link>
               </li>
               <li>
-                <Link to="/blogs">
-                <a className={styles.dropdownlink} onClick={closeMobileMenu}>
+                <Link to="/blogs" className={styles.dropdownlink} onClick={closeMobileMenu}>
                   Blogs
-                </a>
                 </Link>
               </li>
             </ul>
@@ -113,6 +111,16 @@ function NavigationMenu() {
             About
           </Link>
         </li>
+        <li className={styles.navitem}>
+          <Link
+            to="/recruitments"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            Recruitments
+          </Link>
+        </li>
+        
         <li className={[styles.navitem, styles.mobilebtn].join(" ")}>
           <Link to="/contact-us" passHref={true}>
           <button className={styles.btn} onClick={closeMobileMenu}>

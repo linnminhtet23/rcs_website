@@ -1,6 +1,7 @@
 
 import styles from "./PostCard.module.css";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
 function PostCard({ title, content, imageUrl, date, detailPageUrl }) {
   const previewContent = `${content.substring(0, 110)}...`;
@@ -17,9 +18,9 @@ function PostCard({ title, content, imageUrl, date, detailPageUrl }) {
         <ReactMarkdown>{previewContent}</ReactMarkdown>
       </div>
 
-      {/* <Link href={detailPageUrl}> */}
-        <a className={styles.readmore}>read more</a>
-      {/* </Link> */}
+      <Link to={detailPageUrl}>
+        <button className={styles.readmore}>read more</button>
+      </Link>
     </div>
   );
 }

@@ -1,68 +1,67 @@
 .detailcard {
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 1100px;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  
-  .descriptioncontainer {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1100px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.descriptioncontainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descriptioncontainer h4 {
+  font-size: 21px;
+}
+
+.descriptioncontainer ul,
+.descriptioncontainer p {
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.descriptioncontainer {
+  padding-right: 20px;
+}
+
+.detailcard .imagecontainer {
+  flex: 1.8;
+}
+
+.detailcard .image {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .detailcard {
+    width: 80%;
     flex-direction: column;
+    align-items: center;
   }
-  
+
+  .descriptioncontainer {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .detailcard {
+    width: 100%;
+  }
+
   .descriptioncontainer h4 {
-    font-size: 21px;
+    font-size: 18px;
   }
-  
+
   .descriptioncontainer ul,
   .descriptioncontainer p {
-    font-size: 18px;
-    line-height: 2rem;
+    font-size: 14px;
   }
-  
-  .descriptioncontainer {
-    padding-right: 20px;
-  }
-  
-  .detailcard .imagecontainer {
-    flex: 1.8;
-  }
-  
-  .detailcard .image {
-    border-radius: 10px;
-  }
-  
-  @media screen and (max-width: 1100px) {
-    .detailcard {
-      width: 80%;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .descriptioncontainer {
-      order: 2;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .detailcard {
-      width: 100%;
-    }
-  
-    .descriptioncontainer h4 {
-      font-size: 18px;
-    }
-  
-    .descriptioncontainer ul,
-    .descriptioncontainer p {
-      font-size: 14px;
-    }
-  }
-  
+}

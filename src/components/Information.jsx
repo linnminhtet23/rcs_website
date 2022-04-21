@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react'
 import SoftwaresWeDevelop from '../shared-components/SoftwaresWeDevelop'
 import TechnologiesWeUse from '../shared-components/TechnologiesWeUse'
-import ClientSuccess from '../shared-components/ClientSuccess'
 import OurClients from '../shared-components/OurClients'
-function Information({items}) {
-  // console.log(items)
+function Information() {
   return (
     <Fragment>
         <SoftwaresWeDevelop/>

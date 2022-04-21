@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import styles from "./SoftwaresWeDevelop.module.css";
 
 function SoftwaresWeDevelop() {
@@ -6,8 +7,7 @@ function SoftwaresWeDevelop() {
     <div className={styles.container}>
       <h1>Softwares We Develop</h1>
       <div className={styles.softwarecontainer}>
-        {/* <Link href="/services/website"> */}
-          <a>
+        <Link to="/services/website">
             <div className={styles.software}>
               <div className={styles.image}>
                 <img
@@ -19,10 +19,8 @@ function SoftwaresWeDevelop() {
               </div>
               <h5>Website</h5>
             </div>
-          </a>
-        {/* </Link> */}
-        {/* <Link href="/services/web-application"> */}
-          <a>
+        </Link>
+        <Link to="/services/web-application">
             <div className={styles.software}>
               <div className={styles.image}>
                 <img
@@ -34,10 +32,9 @@ function SoftwaresWeDevelop() {
               </div>
               <h5>Web Application</h5>
             </div>
-          </a>
-        {/* </Link> */}
-        {/* <Link href="/services/android-application"> */}
-          <a>
+        </Link>
+        <Link to="/services/android-application">
+          
             <div className={styles.software}>
               <div className={styles.image}>
                 <img
@@ -49,8 +46,7 @@ function SoftwaresWeDevelop() {
               </div>
               <h5>Android Application</h5>
             </div>
-          </a>
-        {/* </Link> */}
+        </Link>
       </div>
     </div>
   );

@@ -51,7 +51,7 @@ function ServiceHeroShared({ featuredServices }) {
                 {featuredService.featuredDescription}
               </p>
               <Link to={`/services/${featuredService.id}`}>
-                <a className={styles.btn}>Read More</a>
+                <button className={styles.btn}>Read More</button>
               </Link>
             </div>
           </div>

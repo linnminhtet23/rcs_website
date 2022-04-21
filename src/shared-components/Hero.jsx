@@ -6,7 +6,7 @@ function Hero({ path, miniPath }) {
 
   useEffect(() => {
     function updateSize() {
-      setWidth(typeof window !== undefined && window.innerWidth);
+      setWidth( window !== undefined && window.innerWidth);
     }
     window.addEventListener("resize", updateSize);
     updateSize();

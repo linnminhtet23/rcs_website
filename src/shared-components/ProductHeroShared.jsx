@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function ProductHeroShared({ featuredProducts }) {
   return (
@@ -47,9 +48,9 @@ function ProductHeroShared({ featuredProducts }) {
             <div className={styles.textcontainer}>
               <h2>{featuredProduct.name}</h2>
               <p className="paragraphfont">{featuredProduct.about}</p>
-              {/* <Link href={`/products/${featuredProduct.id}`}> */}
-                <a className={styles.btn}>Buy Now</a>
-              {/* </Link> */}
+              <Link to={`/products/${featuredProduct.id}`}>
+                <button className={styles.btn}>Buy Now</button>
+              </Link>
             </div>
           </div>
         ))}

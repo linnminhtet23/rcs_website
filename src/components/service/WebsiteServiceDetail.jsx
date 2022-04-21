@@ -2,12 +2,10 @@
 import styles from "./WebsiteServiceDetail.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-// import useTranslation from "next-translate/useTranslation";
 import CheckoutBtn from "../../shared-components/CheckoutBtn";
 import data from '../../locales/en-US/webServiceDetail.json';
 
 function WebsiteServiceDetail() {
-  // const { t } = useTranslation();
 
   return (
     <div className={styles.container}>

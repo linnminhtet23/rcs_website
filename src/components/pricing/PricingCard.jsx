@@ -1,5 +1,6 @@
 
 import styles from "./PricingCard.module.css";
+import {Link} from "react-router-dom";
 
 function PricingCard({ image, name, category, path }) {
   return (
@@ -14,15 +15,15 @@ function PricingCard({ image, name, category, path }) {
       <h2>{name}</h2>
       <h4 className={styles.category}>{category}</h4>
       <div className={styles.btncontainer}>
-        {/* <Link href={path}> */}
-          <a className={styles.btn} style={{ marginRight: "8px" }}>
+        <Link to={path}>
+          <button className={styles.btn} style={{ marginRight: "8px" }}>
             Read More
-          </a>
-        {/* </Link> */}
+          </button>
+        </Link>
 
-        {/* <Link href={`/checkout/${name}`}> */}
-          <a className={styles.btn}>Check Out</a>
-        {/* </Link> */}
+        <Link to={`/checkout/${name}`}>
+          <button className={styles.btn}>Check Out</button>
+         </Link>
       </div>
     </div>
   );

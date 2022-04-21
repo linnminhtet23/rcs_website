@@ -1,0 +1,89 @@
+.container {
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  .slidercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .textcontainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    opacity: 0.75;
+    padding: 8rem 8rem 10rem;
+    width: 100%;
+    background-color: var(--color-white);
+    text-align: left;
+  }
+  
+  .textcontainer h2 {
+    font-size: 36px;
+    margin-bottom: 1.8rem;
+  }
+  
+  .textcontainer p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    padding: 18px 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: var(--size-1);
+    color: var(--color-white);
+    cursor: pointer;
+    background-color: var(--color-primary);
+    text-align: center;
+    margin: 2rem 0px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .textcontainer h2 {
+      font-size: 30px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .textcontainer h2 {
+      font-size: 18px;
+    }
+  
+    .textcontainer p {
+      font-size: 14px;
+    }
+  
+    .btn {
+      padding: 10px 25px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .textcontainer {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .textcontainer p {
+      display: none;
+    }
+  
+    .btn {
+      font-size: 13px;
+    }
+  }
+  
