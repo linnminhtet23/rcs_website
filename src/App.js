@@ -9,6 +9,7 @@ import NewsPage from "./pages/news";
 import ProductsPage from "./pages/porducts";
 import ProductDetailPage from "./pages/porducts/ProductDetail";
 import PricingPage from "./pages/pricing";
+import RecruitmentPage from "./pages/recruitments";
 import ServicesPage from "./pages/services";
 import AndroidAppServicePage from "./pages/services/android-application";
 import WebAppServicePage from "./pages/services/web-application";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUsPage/>}/>
         <Route path="/news" element={<NewsPage/>}/>
         <Route path="/blogs" element={<BlogsPage/>}/>
+        <Route path="/recruitments" element={<RecruitmentPage/>}/>
         <Route path="/checkout/:path" element={<CheckoutPage/>}/>
       </Routes>
       </Layout>

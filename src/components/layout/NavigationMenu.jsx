@@ -102,15 +102,7 @@ function NavigationMenu() {
             </ul>
           )}
         </li>
-        <li className={styles.navitem}>
-          <Link
-            to="/about"
-            className={styles.navlinks}
-            onClick={closeMobileMenu}
-          >
-            About
-          </Link>
-        </li>
+
         <li className={styles.navitem}>
           <Link
             to="/recruitments"
@@ -120,6 +112,17 @@ function NavigationMenu() {
             Recruitments
           </Link>
         </li>
+
+        <li className={styles.navitem}>
+          <Link
+            to="/about"
+            className={styles.navlinks}
+            onClick={closeMobileMenu}
+          >
+            About
+          </Link>
+        </li>
+        
         
         <li className={[styles.navitem, styles.mobilebtn].join(" ")}>
           <Link to="/contact-us" passHref={true}>
